@@ -1,0 +1,62 @@
+.title
+    // display: grid
+    // grid-template-columns: 1fr 164px
+    // grid-template-rows: 1fr 74px
+    width: 100%
+    height: 100%
+    color: white
+    background: url("../assets/background.jpg") no-repeat
+    // grid-template-areas: "name name" "style lang"
+
+    &__name
+        padding-left: 260px
+        padding-top: 495px
+        
+        h2
+            font-size: 36px
+            font-family: 'Conv_Raleway-ExtraLight'
+            margin: 0 
+        
+        h1
+            font-size: 64px
+            font-family: 'Conv_Raleway-SemiBold'
+            margin: 0 
+            text-transform: uppercase;
+
+    &__style
+        position: fixed
+        left: 0
+        bottom: 0
+        display: grid
+        grid-template-columns: repeat(4, auto)
+        grid-area: style
+        align-self: end
+        padding: 17px
+        padding-right: 0
+        padding-top: 25
+        width: 330px
+        background-color: rgba(0,0,0,0.4)
+        // background: linear-gradient(180deg, rgba(45, 45, 45, 0), rgba(0, 0, 0, 0.7))
+
+        h4,
+        a
+            margin: 0
+
+    &__lang
+        position: fixed
+        right: 0
+        bottom: 0
+        display: grid
+        grid-template-columns: repeat(3, auto)
+        grid-area: lang
+        align-self: end
+        justify-self: end
+        justify-items: end
+        padding: 17px
+        padding-left: 0
+        width: 140px
+        background-color: rgba(0,0,0,0.4)
+
+        h4,
+        a
+            margin: 0
